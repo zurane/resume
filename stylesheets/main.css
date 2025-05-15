@@ -23,7 +23,8 @@ body {
 }
 
 .filter-icon {
-  font-size: 100px;
+  font-size: 60px;
+  font-weight: 900;
 }
 
 .filter-icon:hover #fumana img {
