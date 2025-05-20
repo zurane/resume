@@ -23,12 +23,12 @@ body {
 }
 
 .filter-icon {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 900;
 }
 
 .filter-icon:hover {
-  color: yellow;
+  color: #d4d4d4;
 }
 
 .filter-icon .material-icons {

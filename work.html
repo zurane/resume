@@ -1,137 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Work — Mpho Lebona</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body class="bg-black text-white font-sans antialiased">
-    <div class="max-w-screen-2xl m-auto">
-      <!-- Navigation bar -->
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Work — Mpho Lebona</title>
+</head>
+
+<body class="bg-black text-white font-sans antialiased">
+  <div class="max-w-screen-2xl m-auto">
+    <!-- Navigation bar -->
+    <div class="flex flex-1 justify-between align-center mt-5 leading-none h-20 mb-10">
+      <div class="g-4">
+        <a href="/work.html" class="text-xl font-semibold px-3">Work</a>
+      </div>
+      <div class="g-4">
+        <a href="/resume.html" class="text-xl font-semibold px-3">Resume</a>
+      </div>
+    </div>
+
+    <!-- left -->
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 relative gap-10">
+      <!-- Sticky element with links -->
       <div
-        class="flex flex-1 justify-between align-center mt-5 leading-none h-20 mb-10"
-      >
-        <div class="g-4">
-          <a href="/work.html" class="text-xl font-semibold px-3">Work</a>
-        </div>
-        <div class="g-4">
-          <a href="/work.html" class="text-xl font-semibold px-3">About</a>
-        </div>
-        <div class="g-4">
-          <a href="/resume.html" class="text-xl font-semibold px-3">Resume</a>
+        class="hidden md:sticky lg:sticky md:top-0 lg:top-0 md:h-screen lg:h-screen border-stone-600 md:block lg:block">
+        <div class="flex flex-col gap-3 text-sm">
+          <h3 class="text-2xl font-bold border-t border-stone-600 py-5">
+            Featured Work •
+          </h3>
+          <a href="#fumana" class="filter-icon border-t border-stone-600">Fumana Jewellery</a>
+          <a href="#ubuntu" class="filter-icon border-t border-stone-600">Ubuntu Gold
+
+            <a href="#tang" class="filter-icon border-t border-stone-600">TANG Restaurant
+            </a>
+             <a href="#bloom" class="filter-icon border-t border-stone-600">Bloom Wellness
+            </a>
+            <a href="#spatch" class="filter-icon border-t border-stone-600">Spatch Sauce
+            </a>
         </div>
       </div>
 
-      <!-- left -->
-      <div
-        class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 relative gap-10"
-      >
-        <!-- Sticky element with links -->
-        <div
-          class="hidden md:sticky lg:sticky md:top-0 lg:top-0 md:h-screen lg:h-screen border-stone-600 md:block lg:block"
-        >
-          <div class="flex flex-col gap-3 text-sm">
-            <h3 class="text-2xl font-bold border-t border-stone-600 py-5">
-              FEATURED WORK
-            </h3>
-            <a href="#fumana" class="filter-icon border-t border-stone-600"
-              >Fumana Jewellery<i class="material-icons">south_east</i></a
-            >
-            <a href="#ubuntu" class="filter-icon border-t border-stone-600"
-              >Ubuntu Gold
-            <i class="material-icons">south_east</i>
-            <a href="#tang" class="filter-icon border-t border-stone-600"
-              >TANG Restaurant
-              <i class="material-icons filter-icon">south_east</i></a
-            >
-            <a href="#spatch" class="filter-icon border-t border-stone-600"
-              >Spatch Sauce
-              <i class="material-icons filter-icon">south_east</i></a
-            >
+      <!-- Right column -->
+
+      <div>
+        <div class="grid grid-row-3 gap-5">
+          <div class="py-1" id="fumana">
+            <img src="/assets/Fumana-Featured-820x547.jpg" alt="Fumana Project" width="100%" class="mb-3" />
+            <a href="./portfolio/fumana.html" class="text-lg font-bold pb-1 border-b">Learn more</a>
           </div>
-        </div>
+          <div class="py-1" id="ubuntu">
+            <img src="/assets/Ubuntu-featured-820x547.jpg" alt="Ubuntu gold Project" width="100%" class="mb-3" />
+            <a href="#" class="text-lg font-bold pb-1 border-b">
+              Learn more</a>
+          </div>
+          <div class="py-1" id="bloom">
+            <img src="/assets/bloom wellness.jpg" alt="The muse project" width="100%" class="mb-3" />
+            <a href="/portfolio/bloom.html" class="text-lg font-bold pb-1 border-b">
+              Learn more</a>
+          </div>
 
-        <!-- Right column -->
+          <div class="py-1" id="tang">
+            <img src="/assets/TANG-featiured-820x547.jpg" alt="The tang project" width="100%" class="mb-3" />
+            <a href="#" class="text-lg font-bold pb-1 border-b">
+              Learn more</a>
+          </div>
 
-        <div>
-           <h1 class="lg:hidden md:hidden text-3xl font-bold mb-5 pb-5 border-b border-stone-600">Featured Work •</h1>
-          <div class="grid grid-row-3 gap-5 mt-3">
-            <div class="py-1" id="fumana">
-              <img
-                src="/assets/Fumana-Featured-820x547.jpg"
-                alt="Fumana Project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="./Portfolio.html" class="text-lg font-bold pb-1 border-b"
-                >Learn more</a
-              >
-            </div>
-            <div class="py-1" id="ubuntu">
-              <img
-                src="/assets/Ubuntu-featured-820x547.jpg"
-                alt="Ubuntu gold Project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="#" class="text-lg font-bold pb-1 border-b">
-                Learn more</a
-              >
-            </div>
-            <div class="py-1" id="muse">
-              <img
-                src="/assets/The-Muse-featured.gif"
-                alt="The muse project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="#" class="text-lg font-bold pb-1 border-b">
-                Learn more</a
-              >
-            </div>
-
-            <div class="py-1" id="tang">
-              <img
-                src="/assets/TANG-featiured-820x547.jpg"
-                alt="The tang project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="#" class="text-lg font-bold pb-1 border-b">
-                Learn more</a
-              >
-            </div>
-
-            <div class="py-1" id="spatch">
-              <img
-                src="/assets/Spatch-featured-new-820x547.jpg"
-                alt="Spatch project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="#" class="text-lg font-bold pb-1 border-b">
-                Learn more</a
-              >
-            </div>
+          <div class="py-1" id="spatch">
+            <img src="/assets/Spatch-featured-new-820x547.jpg" alt="Spatch project" width="100%" class="mb-3" />
+            <a href="#" class="text-lg font-bold pb-1 border-b">
+              Learn more</a>
           </div>
         </div>
       </div>
     </div>
-    <script src="./scripts/main.js"></script>
-  </body>
- <footer class="flex flex-row max-w-screen-2xl m-auto justify-between mt-10 h-10">
+  </div>
+  <script src="./scripts/main.js"></script>
+</body>
+<footer class="flex flex-row max-w-screen-2xl m-auto justify-between mt-10 h-10">
   <p class="text-sm text-stone-400">
     Copyright © 2025 • Mpho Lebona
   </p>
   <a class="text-sm text-stone-400"> Back to top </a>
 </footer>
+
 </html>
