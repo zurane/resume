@@ -23,8 +23,18 @@ body {
 }
 
 .filter-icon {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 900;
+  padding: 8px 0px;
+  text-transform: uppercase;
+}
+
+.filter-icon sup {
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0px 4px;
+  vertical-align: super;
+  color: #d4d4d4;
 }
 
 .filter-icon:hover {
