@@ -1,147 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="./scripts/gsap.min.js"></script>
-    <!-- Scroll trigger animation from GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Work — Mpho Lebona</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body class="bg-black text-white font-sans antialiased">
-    <div class="max-w-screen-2xl m-auto">
-      <!-- Navigation bar -->
-      <div
-        class="flex flex-1 justify-between align-center mb-10 mt-5 leading-none"
-      >
-        <div>
-          <a href="/work.html" class="text-lg font-semibold link-hover">Portfolio</a>
-        </div>
-        <div>
-          <a href="/resume.html" class="text-lg font-semibold link-hover">Resume</a>
-        </div>
+  <link rel="stylesheet" href="./stylesheets/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./scripts/gsap.min.js"></script>
+  <!-- Scroll trigger animation from GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Work — Mpho Lebona</title>
+</head>
+
+<body class="bg-black text-white font-sans antialiased bg-zinc-950">
+  <div class="max-w-screen-2xl m-auto">
+    <!-- Navigation bar -->
+    <div id="top" class="flex flex-1 justify-between align-center mb-10 mt-5 leading-none">
+      <div>
+        <a href="/work.html" class="text-9xl font-black link-hover">MPHO LEBONA®</a>
       </div>
-
-      <!-- left -->
-      <div
-        class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 relative gap-10"
-      >
-        <!-- Sticky element with links -->
-        <div
-          class="hidden md:sticky lg:sticky md:top-0 lg:top-0 md:h-screen lg:h-screen border-stone-600 md:block lg:block"
-        >
-          <div
-            class="flex flex-col gap-3 text-sm bg-zinc-950 rounded-md p-4 shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] box"
-          >
-            <h3 class="text-2xl font-bold border-b border-zinc-900 py-5">
-              Featured Work •
-            </h3>
-            <a href="#fumana" class="filter-icon border-b border-zinc-900"
-              >Fumana Jewellery <sup>Branding</sup></a
-            >
-            <a href="#ubuntu" class="filter-icon border-b border-zinc-900"
-              >Ubuntu Gold <sup>Brand Identity</sup></a
-            >
-
-            <a href="#tang" class="filter-icon border-b border-zinc-900"
-              >TANG Restaurant <sup>Web design</sup>
-            </a>
-            <a href="#bloom" class="filter-icon border-b border-zinc-900"
-              >Bloom Wellness <sup>Brand Identity</sup>
-            </a>
-            <a href="#spatch" class="filter-icon"
-              >Spatch Sauce <sup>Web design • UX design</sup>
-            </a>
-          </div>
-        </div>
-
-        <!-- Right column -->
-
-        <div>
-          <div class="grid grid-row-3 gap-5">
-            <div class="py-1" id="fumana">
-              <img
-                src="/assets/Fumana-Featured-820x547.jpg"
-                alt="Fumana Project"
-                width="100%"
-                class="mb-3"
-              />
-              <a
-                href="./portfolio/fumana.html"
-                class="text-lg font-bold pb-1 border-b hover-text"
-                >Learn more</a
-              >
-            </div>
-            <div class="py-1" id="ubuntu">
-              <img
-                src="/assets/Ubuntu-featured-820x547.jpg"
-                alt="Ubuntu gold Project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="#" class="text-lg font-bold pb-1 border-b hover-text">
-                Learn more</a
-              >
-            </div>
-            <div class="py-1" id="bloom">
-              <img
-                src="/assets/bloom wellness.jpg"
-                alt="The muse project"
-                width="100%"
-                class="mb-3"
-              />
-              <a
-                href="/portfolio/bloom.html"
-                class="text-lg font-bold pb-1 border-b hover-text"
-              >
-                Learn more</a
-              >
-            </div>
-
-            <div class="py-1" id="tang">
-              <img
-                src="/assets/TANG-featiured-820x547.jpg"
-                alt="The tang project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="#" class="text-lg font-bold pb-1 border-b hover-text">
-                Learn more</a
-              >
-            </div>
-
-            <div class="py-1" id="spatch">
-              <img
-                src="/assets/Spatch-featured-new-820x547.jpg"
-                alt="Spatch project"
-                width="100%"
-                class="mb-3"
-              />
-              <a href="#" class="text-lg font-bold pb-1 border-b hover-text">
-                Learn more</a
-              >
-            </div>
-          </div>
-        </div>
+      <div>
+        <a href="/resume.html" class="text-3xl font-black link-hover">ABOUT</a>
       </div>
     </div>
-    <script src="./scripts/main.js"></script>
-  
-  </body>
-  <footer
-    class="flex flex-row max-w-screen-2xl m-auto justify-between mt-10 h-10"
-  >
-    <p class="text-sm text-stone-400">Copyright © 2025 • Mpho Lebona</p>
-    <a class="text-sm text-stone-400"> Back to top </a>
-  </footer>
+
+
+    <h3 class="text-4xl font-black border-t border-zinc-900 py-5 uppercase">
+      Featured Work
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 my-3">
+
+      <div class="py-1" id="fumana">
+        <img src="/assets/Fumana-Featured-820x547.jpg" alt="Fumana Project" width="100%" class="mb-3" />
+        <a href="./portfolio/fumana.html" class="text-lg font-extrabold pb-1 border-b hover-text">FUMANA</a>
+      </div>
+
+      <div class="py-1" id="ubuntu">
+        <img src="/assets/Ubuntu-featured-820x547.jpg" alt="Ubuntu gold Project" width="100%" class="mb-3" />
+        <a href="#" class="text-lg font-extrabold pb-1 border-b hover-text">
+          UBUNTU</a>
+      </div>
+
+      <div class="py-1" id="bloom">
+        <img src="/assets/bloom wellness.jpg" alt="The muse project" width="100%" class="mb-3" />
+        <a href="/portfolio/bloom.html" class="text-lg font-extrabold pb-1 border-b hover-text">
+          BLOOM</a>
+      </div>
+
+      <div class="py-1" id="tang">
+        <img src="/assets/TANG-featiured-820x547.jpg" alt="The tang project" width="100%" class="mb-3" />
+        <a href="#" class="text-lg font-extrabold pb-1 border-b hover-text">
+          TANG</a>
+      </div>
+
+      <div class="py-1" id="spatch">
+        <img src="/assets/Spatch-featured-new-820x547.jpg" alt="Spatch project" width="100%" class="mb-3" />
+        <a href="#" class="text-lg font-extrabold pb-1 border-b hover-text">
+          SPATCH</a>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+  <script src="./scripts/main.js"></script>
+
+</body>
+<footer class="max-w-screen-2xl m-auto justify-between mt-10 border-t border-zinc-900 py-6">
+  <div class="flex flex-row justify-between items-center mb-5">
+    <p class="text-xs text-stone-400 w-100">AVAILABLE FOR WORK</p>
+      <div>
+        <a href="https://www.instagram.com/mpho_lebona/" class="text-xs text-stone-400 uppercase mr-2">Instagram</a>
+        <a href="https://www.linkedin.com/in/mpho-lebona-8b0b1a1b3/" class="text-xs text-stone-400 uppercase mr-2">LinkedIn</a>
+        <a href="https://twitter.com/mpho_lebona" class="text-xs text-stone-400 uppercase mr-2">Twitter</a>
+      </div>
+  </div>
+  <h1 class="text-9xl font-black py-10">COPYRIGHT © 2025 MPHO LEBONA® 😎</h1>
+  <div class="flex flex-row justify-between items-center pb-10">
+    <a class="text-xs text-stone-400 uppercase" href="mailto:hola.mpho@gmail.com"> hola.mpho@gmail.com</a>
+    <a class="text-xs text-stone-400 uppercase" href="#top"> Back to top </a>
+  </div>
+</footer>
+
 </html>
