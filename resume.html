@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./stylesheets/main.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Mpho Lebona — Portfolio & Resume</title>
@@ -13,46 +15,23 @@
 <body class="bg-black text-white font-sans antialiased">
   <div class="max-w-screen-2xl m-auto">
     <!-- Navigation bar -->
-    <div class="flex flex-1 justify-between align-center mb-10 mt-5 leading-none">
+    <div id="top" class="flex flex-1 justify-between align-center mb-10 mt-5 leading-none">
       <div>
-        <a href="/index.html" class="text-lg font-semibold link-hover">Portfolio</a>
+        <a href="/index.html" class="text-3xl md:text-9xl font-black link-hover">MPHO LEBONA®</a>
       </div>
       <div>
-        <a href="/resume.html" class="text-lg font-semibold link-hover">Resume</a>
+        <a href="/resume.html" class="text-3xl font-black link-hover">ABOUT</a>
       </div>
     </div>
 
     <!-- left -->
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 relative gap-10">
-      <h1 class="lg:hidden md:hidden text-3xl font-bold m-0 p-0">
-        A Bit About Myself •
-      </h1>
       <!-- Sticky element with links -->
       <div class="lg:sticky md:sticky lg:top-0 md:top-0 lg:h-screen md:h-screen">
-        <div class="bg-zinc-950 rounded-md p-3 shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] box">
-          <p class="py-5 text-stone-300 text-sm">
-            I'm a passionate graphic designer with experience in both digital
-            and print media. Started out as a junior design at Jetline Wits,
-            where I built a solid foundation in layout and visual design.
-            Currently, I work at GTIS, focusing on website interfaces, WordPress
-            site maintenance, and preparing designs for both web and print. I'm
-            proficient in Adobe XD, Figma, and various web technologies.
-          </p>
+        <div class="">
           <!-- Links -->
           <div>
-            <a href="mailto:hola.mpho@gmail.com" target="_blank"
-              class="block boder-b border-t border-zinc-900 py-3 px-1 hover:bg-zinc-300 hover:text-black text-sm w-full">hola.mpho@gmail.co.za</a>
-
-            <a href="tel:+27683307272" target="_blank"
-              class="block boder-b border-t border-zinc-900 py-3 px-1 hover:bg-zinc-300 hover:text-black text-sm w-full">
-              +27 68 330 7272
-            </a>
-
-            <a href="https://www.linkedin.com/in/mpho-lebona"
-              class="block boder-b border-t border-zinc-900 py-3 px-1 hover:bg-zinc-300 hover:text-black text-sm w-full">LinkedIn</a>
-
-            <a href="https://github.com/zurane"
-              class="block boder-b border-t border-zinc-900 py-3 px-1 hover:bg-zinc-300 hover:text-black text-sm w-full">Github</a>
+            <img src="/assets/download (1).jpeg" alt="Mpho Lebona" class="w-full h-auto mb-5" />
           </div>
         </div>
       </div>
@@ -61,147 +40,109 @@
       <!-- Work experience -->
       <div>
         <div class="grid grid-row-3 gap-5 w-full">
-          <div class="border-t border-b border-stone-600 py-5">
-            <p class="text-sm text-stone-300 font-semibold">
-              Work Experience
+          <div class="border-t border-stone-800 pt-6">
+            <p class="text-xs uppercase text-stone-300 font-semibold">
+              ( About me )
             </p>
           </div>
-          <!-- Experience 1 -->
-          <div class="py-3 border-b border-stone-600">
-            <h3 class="text-md font-bold">Web Designer / Administrator</h3>
-            <p class="text-md text-stone-300">
-              <a class="text-stone-300" href="https://www.gtis.co.za/" target="_blank">GTIS SA ↗</a><br />
-              February 2024 – Present<br />
-              Randburg, JHB
+          <!-- Description -->
+          <div class="border-stone-800">
+            <h3 class="text-2xl font-black md:text-5xl">Great design isn't just seen — it's experienced, understood, and remembered.
+            </h3>
+            <p class="text-md text-stone-300 py-3">
+              A passionate graphic designer with a strong foundation in layout and visual design, experienced in both
+              digital and print media. Skilled in crafting website interfaces, maintaining WordPress sites, and
+              preparing designs for diverse platforms. Proficient in Adobe XD, Figma, and various web technologies.
             </p>
-            <ul class="list-disc pl-5 text-sm text-stone-400 mt-3">
-              <li class="pb-1">
-                Designing the website's visual elements, such as the layout,
-                typography, color scheme, and imagery.
-              </li>
-              <li class="pb-1">
-                Managed website content and ensure optimal performance.
-              </li>
-              <li class="pb-1">
-                Collaborated with developers and conducted briefings to ensure
-                the design is implemented correctly.
-              </li>
-              <li class="pb-1">
-                Using web technologies like css, and javascript to make
-                updates on existing websites.
-              </li>
-              <li class="pb-1">
-                Conducted project discovery phase and requirements gathering
-                to understand the client's needs and goals for their
-                platforms.
-              </li>
-              <li class="pb-1">
-                Created wireframes and prototypes to visualize the website's
-                structure and layout.
-              </li>
-              <li class="pb-1">
-                Analyze website or related online data to track trends or
-                usage.
-              </li>
-            </ul>
           </div>
-          <!-- Experience 2 -->
-          <div class="py-5 border-b border-stone-600">
-            <h3 class="text-md font-bold">Digital Designer (Intern)</h3>
-            <p class="text-md text-stone-300">
-              <a class="text-stone-300" href="https://www.cliqworks.co.za/" target="_blank">Cliqworks Communications
-                ↗</a><br />
-              October 2023 - December 2023<br />
-              Bedfordview, JHB
-            </p>
-            <ul class="list-disc pl-5 text-sm text-stone-400 mt-3">
-              <li class="pb-1">
-                Developed eye-catching social media graphics and posts aligned
-                with brand guidelines.
-              </li>
-              <li class="pb-1">
-                Managed and maintained a dynamic content calendar in Google
-                Sheets to ensure consistent publishing.
-              </li>
-              <li class="pb-1">
-                Scheduled, monitored, and optimized campaigns using Hootsuite
-                for maximum engagement.
-              </li>
-              <li class="pb-1">
-                Designed and customized WordPress templates in Photoshop for
-                seamless integration and visual impact.
-              </li>
-            </ul>
-          </div>
-          <!-- Experience 3 -->
-          <div class="py-5">
-            <h3 class="text-md font-bold">Junior Designer</h3>
-            <p class="text-md text-stone-300">
-              <a class="text-stone-300" href="https://www.jetline.co.za/store/jetline-wits-university/"
-                target="_blank">Jetline Wits University ↗</a><br />
-              March 2022 - February 2023<br />
-              Braamfontein, JHB
-            </p>
-            <ul class="list-disc pl-5 text-sm text-stone-400 mt-3">
-              <li class="pb-1">
-                Assisting Walk-in customers and assist with their print
-                requirements and helping with quotations for small projects.
-              </li>
-              <li class="pb-1">
-                Using advanced excel and indesign for complicated print jobs
-                and utilizing adobe tools to fix artworks for clients.
-              </li>
-              <li class="pb-1">
-                Liased with university departments to ensure all print
-                requirements are met and delivered on time.
-              </li>
-              <li class="pb-1">
-                Assisted with the design and layout of various print
-                materials, including brochures, flyers, and posters.
-              </li>
-            </ul>
-          </div>
+
           <!-- Skills section -->
-          <div class="border-t border-stone-600 py-8">
-            <p class="text-sm text-stone-300 font-semibold">Skills</p>
-            <div class="grid grid-cols-2 mt-7">
-              <div>
-                <h4 class="mb-5">Technology stack</h4>
-                <ul class="list-none text-sm text-stone-400">
-                  <li>HTML5 & CSS3</li>
-                  <li>Tailwindcss</li>
-                  <li>JavaScript</li>
-                  <li>MongoDB</li>
-                  <li>Express</li>
-                  <li>Node.js</li>
-                  <li>React.js</li>
-                </ul>
+          <div class="border-t border-stone-800 pt-8">
+            <p class="text-xs text-stone-300 font-semibold uppercase">( Capabilities )</p>
+            <!-- Accordion Item 1 -->
+            <div class="border-b border-stone-900">
+              <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 text-slate-800">
+                <span class="text-stone-200 uppercase text-lg font-extrabold">WEB DESIGN</span>
+                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="gray" class="w-4 h-4">
+                    <path
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="pb-5 text-sm text-stone-500">
+                  Material Tailwind is a framework that enhances Tailwind CSS with additional styles and components.
+                </div>
               </div>
-              <div>
-                <h4 class="mb-5">Creative stack</h4>
-                <ul class="list-none text-sm text-stone-400">
-                  <li class="list-none">Adobe Photoshop</li>
-                  <li>Adobe Illustrator</li>
-                  <li>Adobe InDesign</li>
-                  <li>Adobe Lightroom</li>
-                  <li>WordPress</li>
-                  <li>Adobe XD</li>
-                  <li>Figma</li>
-                </ul>
+            </div>
+            <!-- Accordion Item 2 -->
+            <div class="border-b border-stone-900">
+              <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-5 text-slate-800">
+                <span class="text-stone-200 uppercase text-lg font-extrabold">USER INTERFACE DESIGN</span>
+                <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="gray"
+                    class="w-4 h-4 text-stone-400">
+                    <path
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="pb-5 text-sm text-stone-500">
+                  You can use Material Tailwind by importing its components into your Tailwind CSS project.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item 3 -->
+            <div class="border-b border-stone-900">
+              <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-5 text-slate-800">
+                <span class="text-stone-200 uppercase text-lg font-extrabold">WEB DEVELOPMENT</span>
+                <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="gray" class="w-4 h-4">
+                    <path
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="pb-5 text-sm text-stone-500">
+                  Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Item 4 -->
+            <div class="border-b border-stone-900">
+              <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center py-5 text-slate-800">
+                <span class="text-stone-200 uppercase text-lg font-extrabold">VISUAL IDENTITY DESIGN</span>
+                <span id="icon-4" class="text-slate-800 transition-transform duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="gray"
+                    class="w-4 h-4 text-stone-400">
+                    <path
+                      d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                  </svg>
+                </span>
+              </button>
+              <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="pb-5 text-sm text-stone-500">
+                  Material Tailwind allows you to quickly build modern, responsive websites with a focus on design.
+                </div>
               </div>
             </div>
           </div>
+
+
           <!-- Education section -->
-          <div class="border-t border-b border-stone-600 py-8">
-            <p class="text-sm text-stone-300 font-semibold">Education</p>
+          <div class="pt-4">
+            <p class="text-xs uppercase text-stone-300 font-semibold">( Experience )</p>
             <div class="grid grid-cols-2 mt-7">
               <div>
-                <h4 class="mb-5 text-md">IIE Rosebank College</h4>
+                <h4 class="mb-5 text-md uppercase font-extrabold">Web designer / Administrator</h4>
               </div>
               <div>
                 <p class="mb-5 text-sm">
                   Diploma IT-Based Graphic development<br />
-                  <span class="text-stone-400">2020 - 2023</span><br />
+                  <span class="text-stone-400">2023 - Current</span><br />
                   <span class="text-stone-400">Certificate of completion</span><br />
                   <a href="https://www.rosebankcollege.co.za/" target="_blank" class="text-stone-400">Rosebank College
                     ↗</a>
@@ -210,7 +151,7 @@
             </div>
             <div class="grid grid-cols-2 mt-7">
               <div>
-                <h4 class="mb-5 text-md">HyperionDev</h4>
+                <h4 class="mb-5 text-md uppercase font-extrabold">Jnr Graphic designer</h4>
               </div>
               <div>
                 <p class="mb-5 text-sm">
@@ -223,7 +164,7 @@
             </div>
             <div class="grid grid-cols-2 mt-7">
               <div>
-                <h4 class="mb-5 text-md">Dinwiddie High School</h4>
+                <h4 class="mb-5 text-md uppercase font-extrabold">Digital designer</h4>
               </div>
               <div>
                 <p class="mb-5 text-sm">
@@ -239,12 +180,30 @@
       </div>
     </div>
   </div>
+  <!-- scripts -->
   <script src="./scripts/gsap.min.js"></script>
   <script src="/scripts/main.js"></script>
 </body>
-<footer class="flex flex-row max-w-screen-2xl m-auto justify-between mt-10 h-10">
-  <p class="text-sm text-stone-400">Copyright © 2025 • Mpho Lebona</p>
-  <a class="text-sm text-stone-400"> Back to top </a>
+
+<footer class="max-w-screen-2xl m-auto justify-between mt-10 border-t border-zinc-900 py-6">
+  <div class="flex flex-row justify-between items-start mb-5">
+    <div>
+      <p class="text-xs text-stone-400 w-100">AVAILABLE FOR WORK</p>
+      <p class="text-sm text-stone-100 font-semibold">SEND AN EMAIL</p>
+      <p class="text-sm text-stone-100 font-semibold">MY RESUME</p>
+    </div>
+    <div class="flex flex-col items-start gap-2">
+      <a href="https://www.behance.net/mpho_lebona" class="text-xs text-stone-400 uppercase mr-2">Behance</a>
+      <a href="https://www.github.com/zurane/" class="text-xs text-stone-400 uppercase mr-2">Github</a>
+      <a href="https://www.linkedin.com/in/mpho-lebona-8b0b1a1b3/"
+        class="text-xs text-stone-400 uppercase mr-2">LinkedIn</a>
+    </div>
+  </div>
+  <h1 class="text-5xl md:text-9xl md:py-8 py-4 font-black">MPHO LEBONA® 😎</h1>
+  <div class="flex flex-row justify-between items-center pb-10">
+    <p class="text-xs text-stone-400 uppercase"> Copyright © 2025</p>
+    <a class="text-xs text-stone-400 uppercase" href="#top"> Back to top </a>
+  </div>
 </footer>
 
 </html>
