@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+   <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_upward" />
   <link rel="stylesheet" href="/stylesheets/main.css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <title>Work — Bloom overview</title>
@@ -13,7 +15,7 @@
 <body class="bg-black text-white font-sans antialiased">
   <div class="max-w-screen-2xl m-auto">
     <!-- Navigation bar -->
-    <div class="flex flex-1 justify-between align-center mt-5 leading-none h-20">
+    <div class="flex flex-1 justify-between align-center mt-5 leading-none h-20 px-3">
       <div>
         <a href="/index.html" class="text-2xl font-bold"><i class="material-icons text-2xl font-normal">arrow_back
           </i></a>
@@ -30,8 +32,8 @@
 
 
         <!-- Links -->
-        <div>
-          <p class="text-4xl text-stone-50 font-black pb-4 uppercase">Bloom Wellness</p>
+        <div class="px-3">
+          <p class="text-3xl text-stone-50 font-black pb-4 uppercase">Bloom Wellness</p>
           <div class="border-t border-stone-600 py-3 px-1">
             <h5 class="text-lg">Industry</h5>
             <p class="text-sm text-stone-400">Healthcare</p>
@@ -48,11 +50,11 @@
 
       <!-- Right column -->
       <div>
-        <div class="grid grid-row-3 gap-5 w-full">
+        <div class="grid grid-row-3 gap-5 w-full px-3">
           <div class="pb-3 border-b border-stone-600">
             <img src="/assets/bloom wellness.jpg" alt="Fumana Project" width="100%" class="mb-3" />
-            <h3 class="text-2xl font-semibold">Overview</h3>
-            <p class="text-sm text-stone-300 py-1">
+            <h3 class="text-xs font-semibold uppercase text-stone-400">( Overview )</h3>
+            <p class="text-sm text-stone-300 py-3">
               Bloom Wellness is a health and wellness company focusing on the physical and mental well-being of
               individuals. The
               brand aims to provide a holistic approach to wellness, offering a range of services and products that
@@ -74,23 +76,33 @@
       </div>
     </div>
   </div>
-</body>
-<footer class="max-w-screen-2xl m-auto justify-between mt-10 border-t border-zinc-900 py-6">
-  <div class="flex flex-row justify-between items-center mb-5">
-    <p class="text-xs text-stone-400 w-100">AVAILABLE FOR WORK</p>
+     <footer class="mt-15 py-10 w-full bg-yellow-400 text-black px-3">
+<div class="max-w-screen-2xl m-auto justify-between">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
     <div>
-      <a href="https://www.behance.net/mpho_lebona" class="text-xs text-stone-400 uppercase mr-2">Behance</a>
-      <a href="https://www.github.com/zurane/" class="text-xs text-stone-400 uppercase mr-2">Github</a>
-      <a href="https://www.linkedin.com/in/mpho-lebona-8b0b1a1b3/"
-        class="text-xs text-stone-400 uppercase mr-2">LinkedIn</a>
-
+      <p class="uppercase text-xs text-zinc-900 font-extrabold">Copyright © 2025 Mpho Lebona</p>
     </div>
+    <div>
+      <p class="uppercase text-xs text-zinc-900 py-1">hola.mpho@gmail.com</p>
+      <p class="uppercase text-xs text-zinc-900 py-1">+27 (0) 68 330-7272</p>
+    </div>
+    <div class="flex flex-row justify-between items-start">
+      <div>
+        <p class="uppercase text-xs text-zinc-900 py-1">LinkedIn</p>
+        <p class="uppercase text-xs text-zinc-900 py-1">Instagram</p>
+        <p class="uppercase text-xs text-zinc-900 py-1">Github</p>
+      </div>
+      <div>
+        <a href="#top" class="text-sm text-zinc-900 p-2"><span
+            class="material-symbols-outlined">arrow_upward</span></a>
+      </div>
+    </div>
+
   </div>
-  <h1 class="text-9xl font-black py-8">COPYRIGHT © 2025 MPHO LEBONA® 😎</h1>
-  <div class="flex flex-row justify-between items-center pb-10">
-    <a class="text-xs text-stone-400 uppercase" href="mailto:hola.mpho@gmail.com"> hola.mpho@gmail.com</a>
-    <a class="text-xs text-stone-400 uppercase" href="#top"> Back to top </a>
-  </div>
+</div>
+
 </footer>
+</body>
+
 
 </html>

@@ -25,16 +25,7 @@ $(document).ready(function () {
   });
 });
 
-
-
-// Sticky element entrance animation
-gsap.to(".box", {
-  duration: 1.5,
-  x: 5,
-  ease: "power3.out",
-});
-
-// GSAP Animation link hover effect (work.html)
+// GSAP Animation link hover effect (index.html)
 const texts = document.querySelectorAll(".hover-text");
 texts.forEach((text) => {
   text.addEventListener("mouseenter", () => {
@@ -57,7 +48,7 @@ texts.forEach((text) => {
 });
 
 
-// Simple JavaScript accordion
+// accordion
  function toggleAccordion(index) {
     const content = document.getElementById(`content-${index}`);
     const icon = document.getElementById(`icon-${index}`);
