@@ -46,3 +46,8 @@ body {
 .filter-icon:hover .material-icons {
   transform: translateX(5px);
 }
+
+.btn-top a .material-symbols-outlined {
+  font-size: 60px;
+  font-weight: 100;
+}
