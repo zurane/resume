@@ -25,27 +25,7 @@ $(document).ready(function () {
   });
 });
 
-// GSAP Animation link hover effect (index.html)
-const texts = document.querySelectorAll(".hover-text");
-texts.forEach((text) => {
-  text.addEventListener("mouseenter", () => {
-    gsap.to(text, {
-      scale: 1.2,
-      textShadow: "0px 0px 15px #4ade80",
-      color: "#4ade80",
-      duration: 0.2,
-    });
-  });
 
-  text.addEventListener("mouseleave", () => {
-    gsap.to(text, {
-      scale: 1,
-      textShadow: "0px 0px 0px transparent",
-      color: "#FFFFFF",
-      duration: 0.3,
-    });
-  });
-});
 
 
 // accordion
