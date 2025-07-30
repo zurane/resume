@@ -59,6 +59,7 @@ body {
   transform: translateY(5px);
 }
 
+/* Homepage intro GSAP animation */
 #heading {
   opacity: 0;
 }
