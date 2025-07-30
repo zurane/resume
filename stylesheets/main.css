@@ -59,6 +59,10 @@ body {
   transform: translateY(5px);
 }
 
+#heading {
+  opacity: 0;
+}
+
 /* Mansory grid layout */
 
 .masonry {

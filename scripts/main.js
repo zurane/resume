@@ -25,6 +25,9 @@ $(document).ready(function () {
   });
 });
 
+gsap.registerPlugin(SplitText);
+
+
 
 
 
@@ -74,6 +77,19 @@ function updateTimeAndDate() {
     timeElem.textContent = formattedTime;
   }
 }
+
+const splitEl = document.getElementById('heading');
+
+gsap.set(splitEl, { opacity: 1 });
+
+let split = SplitText.create("#heading", { type: "chars" });
+//now animate each character into place from 20px below, fading in:
+gsap.from(split.chars, {
+  y: 20,
+  autoAlpha: 0,
+  stagger: 0.05
+});
+
 
 // Update the time and date every minute
 setInterval(updateTimeAndDate, 500);
