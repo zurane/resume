@@ -89,7 +89,7 @@ body {
 
 .masonry {
   column-count: 1;
-  column-gap: 2rem;
+  column-gap: 1.25rem;
 }
 @media (min-width: 768px) {
   .masonry {
