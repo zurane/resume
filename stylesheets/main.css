@@ -73,6 +73,18 @@ body {
   transform: translate(5px);
 }
 
+
+.header-cta .material-symbols-outlined {
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s ease;
+}
+
+.header-cta:hover .material-symbols-outlined {
+  transform: translate(5px);
+}
+
 /* Mansory grid layout */
 
 .masonry {
