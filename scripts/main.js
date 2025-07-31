@@ -87,7 +87,7 @@ let split = SplitText.create("#heading", { type: "chars" });
 gsap.from(split.chars, {
   y: 20,
   autoAlpha: 0,
-  stagger: 0.05
+  stagger: 0.04
 });
 
 
