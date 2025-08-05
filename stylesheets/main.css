@@ -33,7 +33,7 @@ body {
 }
 
 .btn-top a .material-symbols-outlined {
-  font-size: 100px;
+  font-size: 90px;
   transition: 0.3s ease;
 }
 
@@ -91,9 +91,10 @@ body {
   transition: 0.2s ease;
 }
 
-.about-section:hover  .material-symbols-outlined {
+.about-section:hover .material-symbols-outlined {
   transform: translate(5px);
 }
+
 
 /* Mansory grid layout */
 
