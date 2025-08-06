@@ -59,6 +59,15 @@ body {
   transform: translateY(5px);
 }
 
+.social-links .material-symbols-outlined {
+  transition: 0.2s ease;
+}
+
+.social-links a:hover .material-symbols-outlined {
+  transform: translate(5px);
+
+}
+
 /* Homepage intro GSAP animation */
 #heading {
   opacity: 0;

@@ -25,7 +25,26 @@ $(document).ready(function () {
   });
 });
 
+
+
 gsap.registerPlugin(SplitText);
+
+gsap.set(".item-img", { y: 100 });
+
+
+ScrollTrigger.batch(".item-img", {
+  onEnter: (batch) =>
+    gsap.to(batch, {
+      duration: 1,
+      autoAlpha: 1,
+      y: 0,
+      stagger: 0.1
+    }),
+  start: "top center"
+});
+
+
+
 
 
 
@@ -63,7 +82,7 @@ function toggleAccordion(index) {
 // Time and date display
 function updateTimeAndDate() {
   const now = new Date();
-  const options = { weekday: 'long',month: 'long', day: 'numeric' };
+  const options = { weekday: 'long', month: 'long', day: 'numeric' };
   const formattedDate = now.toLocaleDateString('en-US', options);
   const formattedTime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
 
@@ -87,7 +106,7 @@ let split = SplitText.create("#heading", { type: "chars" });
 gsap.from(split.chars, {
   y: 20,
   autoAlpha: 0,
-  stagger: 0.04
+  stagger: 0.05
 });
 
 
