@@ -78,6 +78,11 @@ body {
   transition: 0.2s ease;
 }
 
+.masonry-item:hover div h3 {
+  text-decoration: underline;
+}
+
+
 .masonry-item:hover .card-title-container .material-symbols-outlined {
   transform: translate(5px);
 }
