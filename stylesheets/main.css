@@ -65,7 +65,6 @@ body {
 
 .social-links a:hover .material-symbols-outlined {
   transform: translate(5px);
-
 }
 
 /* Homepage intro GSAP animation */
@@ -78,10 +77,13 @@ body {
   transition: 0.2s ease;
 }
 
-.masonry-item:hover div h3 {
-  text-decoration: underline;
+.masonry-item div h3 {
+  transition: padding-bottom 0.1s ease;
 }
 
+.masonry-item:hover div h3 {
+  border-bottom: 2px solid #000;
+}
 
 .masonry-item:hover .card-title-container .material-symbols-outlined {
   transform: translate(5px);
@@ -107,7 +109,6 @@ body {
   transform: translate(5px);
 }
 
-
 /* Mansory grid layout */
 
 .masonry {
@@ -130,8 +131,6 @@ body {
   margin-bottom: 2rem;
   display: block;
 }
-
-
 
 .work-grid {
   display: grid;
