@@ -93,7 +93,7 @@ function updateTimeAndDate() {
     dateElem.textContent = formattedDate;
   }
   if (timeElem) {
-    timeElem.textContent = formattedTime + ' — ' + 'JOHANNESBURG';
+    timeElem.textContent = formattedTime;
   }
 }
 
