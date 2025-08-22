@@ -82,7 +82,7 @@ body {
 }
 
 .masonry-item:hover div h3 {
-  border-bottom: 2px solid #000;
+  border-bottom: 3px solid #000;
 }
 
 .masonry-item:hover .card-title-container .material-symbols-outlined {
