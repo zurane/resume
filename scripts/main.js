@@ -69,6 +69,7 @@ function updateTimeAndDate() {
   }
 }
 
+
 const splitEl = document.getElementById('heading');
 
 gsap.set(splitEl, { opacity: 1 });
