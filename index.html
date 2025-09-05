@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,34 +34,32 @@
 
 <body class="text-black bg-[#ffef46] font-sans antialiased">
   <!-- hero intro with img-->
-  <header id="top" class="px-3 py-4 bg-slate-100 bg-fixed md:h-[90vh] relative">
+  <header id="top" class="px-3 py-4 bg-fixed md:h-[80vh] relative border-b border-black">
     <nav class="flex flex-1 justify-between align-center mb-10 mt-5 leading-none max-w-screen-2xl m-auto px-3">
       <div>
-        <a href="/index.html" class="text-2xl md:text-5xl font-black link-hover">MPHO LEBONA®</a>
+        <a href="/index.html" class="text-2xl md:text-5xl font-black link-hover tracking-tighter">M—LEBONA</a>
       </div>
       <div class="hidden sm:block uppercase text-xs text-zinc-900 py-3">
-        <p id="date" class="py-1"></p>
-        <p id="time" class="font-bold text-2xl"></p>
+        <span id="date" class="py-1"></span>,
+        <span id="time" class=""></span>
       </div>
       <div class="text-sm text-right md:text-md font-bold leading-5 nav-items">
-        <a href="#about" class="font-black link-hover">ABOUT</a><br />
         <a href="#work" class="font-black link-hover">WORK</a><br />
-        <a href="#contact" class="font-black link-hover">CONTACT</a>
       </div>
     </nav>
-    <div class="max-w-screen-2xl m-auto px-3 py-10">
-      <span class="py-4 px-3 uppercase font-semibold text-xs">Hey there — I’m Mpho</span><br />
-      <h1 id="heading" class="font-extrabold text-4xl md:text-9xl py-6 tracking-tight">
+    <div class="max-w-screen-2xl m-auto px-3 py-15">
+      <span class="py-4 px-2 uppercase font-semibold text-xs">Hey there — I’m Mpho</span><br />
+      <h1 id="heading" class="font-extrabold text-4xl md:text-9xl py-6 tracking-tighter capitalize">
         Digital Designer <br />
         Web developer
       </h1>
-      <a href="mailto:hola.mpho@gmail.com" class="header-cta flex flex-inline items-center gap-2"><span
+      <a href="mailto:hola.mpho@gmail.com" target="_top" class="header-cta flex flex-inline items-center gap-2"><span
           class="material-symbols-outlined">arrow_circle_right </span>Let's talk</a>
     </div>
   </header>
 
   <main>
-    <div id="about" class="border-b border-black md:h-150 m-auto justify-center flex items-center">
+    <!-- <div id="about" class="border-b border-black m-auto justify-center flex items-center">
       <div class="max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 py-10 px-3">
         <div>
           <span class="text-xs uppercase font-semibold py-10">
@@ -77,17 +74,6 @@
             web administration for a variety of clients across different
             industries.
           </p>
-          <p class=" py-3 mb-2">
-            I consider myself a multidisciplinary creative confident in my
-            ability to adapt, learn quickly, and take on diverse creative and
-            technical projects.
-          </p>
-          <p class="py-3 mb-2">
-            I'm open to new opportunities in UI/UX design, web design, digital
-            design, and web development — and excited to contribute to teams
-            that value thoughtful, user-centered work.
-          </p>
-
           <div class="flex flex-inline items-center my-6">
             <a href="https://mpholebona.cv/" target="_blank"
               class="flex items-center gap-1 rounded-full text-black text-center text-sm justify-center transition-colors duration-300 cursor-pointer about-section text-md font-semibold">
@@ -99,17 +85,17 @@
 
         <div class="hidden md:flex justify-end"></div>
       </div>
-    </div>
+    </div> -->
 
-    <section class="max-w-screen-2xl m-auto px-3 py-5">
-      <h2 id="work" class="md:text-xs uppercase font-semibold py-10">
+    <section class="max-w-screen-2xl m-auto py-5 px-3" id="work">
+      <h2 id="work" class="md:text-xs uppercase font-semibold py-5">
         ( Selected Work )
       </h2>
       <!-- Work -->
       <div class="masonry">
         <a class="masonry-item item-img" href="./portfolio/fumana.html">
           <img loading="lazy" src="/assets/wfchcj23xfg86tmtmtjp.webp" alt="Fumana Project" width="100%" class="mb-2" />
-            <span class="text-[0.67rem] uppercase">Branding / Visual system</span>
+          <span class="text-[0.67rem] uppercase">Branding / Visual system</span>
           <div class="flex flex-row justify-between items-center py-1 card-title-container">
             <h3 class="text-lg font-bold">FUMANA JEWELLERS</h3>
             <span class="material-symbols-outlined">arrow_forward</span>
@@ -145,30 +131,21 @@
           </div>
         </a>
       </div>
-      <section class="work-grid">
-       
-      </section>
     </section>
   </main>
 
-  <script src="./scripts/main.js" type="module"></script>
+  <script src="./scripts/main.js" type="module">
+  </script>
 
 
 
   <!-- Footer -->
   <footer id="contact"
-    class="py-10 w-full bg-slate-100 text-black px-4 h-120 relative w-full overflow-hidden border-box">
+    class="py-10 w-full text-black px-4 h-100 relative w-full overflow-hidden border-box border-t border-black">
     <div class="max-w-screen-2xl m-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="md:col-span-2 py-5 flex flex-row justify-between items-center">
-          <a href="/index.html" class="text-2xl md:text-5xl font-black link-hover">M — LEBONA®</a>
-          <div class="btn-top">
-            <a href="#top" class="text-zinc-900 flex-inline items-center"><span
-                class="material-symbols-outlined">arrow_circle_up</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="social-links">
+          <div class="social-links pl-3">
         <div class="uppercase text-xs text-zinc-900 py-1"><a href="https://www.linkedin.com/in/mpho-lebona/"
             target="_blank" class="flex flex-inline items-center gap-1"><span
               class="material-symbols-outlined">arrow_forward</span>LINKEDIN</a></div>
@@ -180,11 +157,19 @@
 
         <div class="uppercase text-xs text-zinc-900 py-1"><a href="tel:0683307272" target="_top"
             class="flex flex-inline items-center gap-1"><span
-              class="material-symbols-outlined">arrow_forward</span>TELEPHONE</a></div>
+              class="material-symbols-outlined">arrow_forward</span>MOBILE</a></div>
       </div>
-      <div class="pt-5 absolute bottom-10 w-full">
-        <p class="uppercase text-xs text-zinc-900 py-1">
-          Copyright © 2025 M — LEBONA | All rights reserved
+          <div class="btn-top">
+            <a href="#top" class="text-zinc-900 flex-inline items-center"><span
+                class="material-symbols-outlined">arrow_circle_up</span></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pt-5 absolute bottom-5 w-full">
+        <p
+          class="uppercase text-9xl text-zinc-900 font-extrabold py-1 md:tracking-[0.13em]   select-none">
+        Copyright &copy; 2025
         </p>
       </div>
     </div>
